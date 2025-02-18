@@ -19,7 +19,7 @@ def romanToArabic(roman):
             total -= val
         else:
             total += val
-        prev_value = val
+            prev_value = val
 
     return total
 
