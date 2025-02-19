@@ -1,0 +1,1 @@
+print(f"{int((float(input()) * 1024)/11)} songs")
