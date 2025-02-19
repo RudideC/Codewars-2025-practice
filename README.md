@@ -2,7 +2,7 @@
 
 This branch contains the answers for the 2015 - 2024 HP Codewars  
 
-Questions can be found in the [main](https://github.com/RudideC/Codewars-2025-practice/tree/questions) branch
+Questions can be found in the [questions](https://github.com/RudideC/Codewars-2025-practice/tree/questions) branch
 
 ## Important
 
