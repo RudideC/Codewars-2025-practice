@@ -1,0 +1,1 @@
+print(f"Ana should save a total of {int(input()) + int(input())} euros.")
