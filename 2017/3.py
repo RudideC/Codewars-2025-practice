@@ -1,0 +1,1 @@
+print(f"{int(int(input())/int(input()))}")
