@@ -1,0 +1,1 @@
+print(f"{input()} is the {input()} of CodeWars. We {input()} you {input()} and have fun!")
