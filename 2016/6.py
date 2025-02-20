@@ -23,4 +23,3 @@ s1, s2 = list(time[2])
 h1, h2, m1, m2, s1, s2 = numToBinary(h1), numToBinary(h2), numToBinary(m1), numToBinary(m2), numToBinary(s1), numToBinary(s2)
 for i in range(0, 4):
     print(h1[i], h2[i], m1[i], m2[i], s1[i], s2[i])
-    print()
