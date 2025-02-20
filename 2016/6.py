@@ -1,26 +1,26 @@
-numbers = [input()]
-while numbers[-1] != "0":
-    numbers.append(input().strip())
+def numToBinary(num) -> list:
+    a = []
+    t = [8, 4, 2, 1]
+    num = int(num)
+    for i in t:
+        if num == 0:
+            break
+        if num >= i:
+            a.append("o")
+            num -= i
+        else:
+            a.append("-")
+    while len(a) < 4:
+        a.append("-")
+    return a
 
-numbers.pop(-1)
+time = input()
+time = time.split(":")
+h1, h2 = list(time[0])
+m1, m2 = list(time[1])
+s1, s2 = list(time[2])
 
-d = {}
-
-for num in numbers:
-    a = num.split(" ")
-    if a[0] not in d:
-        d[a[0]] = 0
-    if a[1] not in d:
-        d[a[1]] = 0
-    if a[2] not in d:
-        d[a[2]] = 0
-    d[a[0]] += 3
-    d[a[1]] += 2
-    d[a[2]] += 1
-
-# The lambda thing makes it sort by value instead of key
-sorted_items = sorted(d.items(), key=lambda x: x[1], reverse=True)
-top_3 = sorted_items[:3]
-
-for key, value in top_3:
-    print(key, value)
+h1, h2, m1, m2, s1, s2 = numToBinary(h1), numToBinary(h2), numToBinary(m1), numToBinary(m2), numToBinary(s1), numToBinary(s2)
+for i in range(0, 4):
+    print(h1[i], h2[i], m1[i], m2[i], s1[i], s2[i])
+    print()
